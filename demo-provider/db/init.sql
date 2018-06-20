@@ -1,0 +1,13 @@
+CREATE DATABASE ms_test DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+Use ms_test;
+SET NAMES utf8;
+SET FOREIGN_KEY_CHECKS = 0;
+
+DROP TABLE IF EXISTS `provider`;
+CREATE TABLE `provider` (
+  `fid` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `fname` varchar(255) NOT NULL DEFAULT '' COMMENT '姓名',
+  `fage` int(3) NOT NULL DEFAULT '0' COMMENT '年龄',
+  PRIMARY KEY (`fid`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COMMENT '生产者表';
+

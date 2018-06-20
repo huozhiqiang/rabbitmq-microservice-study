@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yss.cloud.study.mapper.ProviderMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.yss.cloud.study.entity.Provider" id="providerMap">
+        <result property="id" column="fid"/>
+        <result property="name" column="fname"/>
+        <result property="age" column="fage"/>
+    </resultMap>
+
+</mapper>

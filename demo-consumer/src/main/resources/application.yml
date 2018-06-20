@@ -1,0 +1,13 @@
+server:
+  port: 9021
+spring:
+  application:
+    name: demo-consumer
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+  instance:
+    preferIpAddress: true
+    
+### 参考：https://spring.io/guides/gs/client-side-load-balancing/
